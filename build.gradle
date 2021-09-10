@@ -2,7 +2,7 @@
 
 plugins {
     // Apply the application plugin to add support for building a CLI application in Java.
-    id "com.jfrog.artifactory" version "4.24.16" 
+    id "com.jfrog.artifactory" version "7.2" 
     id 'java'
     id 'maven-publish'
     id 'application'
@@ -43,7 +43,7 @@ dependencies {
 
 artifactory {
    publish {
-    contextUrl = 'http://localhost.localdomain:8082/artifactory'   //The base Artifactory URL for the publisher
+    contextUrl = 'http://127.0.0.1:8082/'   //The base Artifactory URL for the publisher
     //A closure defining publishing information
     repository {
       repoKey = 'integration-libs'   //The Artifactory repository key to publish to
