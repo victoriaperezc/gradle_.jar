@@ -43,7 +43,7 @@ dependencies {
 
 artifactory {
    publish {
-    contextUrl = 'http://127.0.0.1:8082/'   //The base Artifactory URL for the publisher
+    contextUrl = 'http://127.0.0.1:8082/artifactory'   //The base Artifactory URL for the publisher
     //A closure defining publishing information
     repository {
       repoKey = 'integration-libs'   //The Artifactory repository key to publish to
